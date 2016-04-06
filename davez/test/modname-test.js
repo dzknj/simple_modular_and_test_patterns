@@ -11,7 +11,7 @@ describe('sayHi', ()=> {
 });
 describe('name', ()=> {
   it('should say Jersey Dave', ()=> {
-    expect(greet.name).to.eql('Jersey Dave')
+    expect(greet.name).to.eql('Jersey Dave');
   });
 });
 describe('command line argument', ()=> {

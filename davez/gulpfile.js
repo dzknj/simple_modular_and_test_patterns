@@ -3,13 +3,12 @@ const eslint = require('gulp-eslint');
 const mocha = require('gulp-mocha');
 
 var files = ['index.js', 'lib/**/*.js', 'gulpfile.js'];
-
 gulp.task('lint:test', function() {
   return gulp.src('./test/**/*test.js')
     .pipe(eslint({
       rules: {
         'indent': ['error', 2],
-        'semi': 0,
+        'semi': [2, 'always'],
         'strict': 0,
         'quotes': [1, 'single', 'avoid-escape'],
         'no-use-before-define': 0,
@@ -34,7 +33,7 @@ gulp.task('lint:notest', function() {
     .pipe(eslint({
       rules: {
         'indent': ['error', 2],
-        'semi': 0,
+        'semi': [2, 'always'],
         'strict': 0,
         'quotes': [1, 'single', 'avoid-escape'],
         'no-use-before-define': 0,
