@@ -16,7 +16,8 @@ gulp.task('lint:test', function() {
         'indent': ['error', 2]
       },
       envs: [
-        'mocha'
+        'mocha',
+        'es6'
       ]
     }))
     .pipe(eslint.format());
@@ -27,7 +28,11 @@ gulp.task('lint:notest', function() {
     .pipe(eslint({
       rules: {
         'indent': ['error', 2]
-      }
+      },
+      envs: [
+        'mocha',
+        'es6'
+      ]
     }))
     .pipe(eslint.format());
 });
