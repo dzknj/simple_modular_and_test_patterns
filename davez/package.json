@@ -1,0 +1,21 @@
+{
+  "name": "jerseygreeter",
+  "version": "1.0.0",
+  "description": "greet app for saying hello to person after they enter a name, and also says hello to jersey dave",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "dzknj@outlook.com",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
+}
