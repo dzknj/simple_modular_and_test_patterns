@@ -7,4 +7,4 @@ Greet.prototype.hello = function() {
 };
 const greet = new Greet('Jersey Dave');
 console.log(greet.hello());
-console.log("Hello,",process.argv[2]);
+console.log('Hello',process.argv[2]);
